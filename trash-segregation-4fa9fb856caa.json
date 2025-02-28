@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "trash-segregation",
+  "private_key_id": "4fa9fb856caa0d90dabef60fa0d58a2f316306a8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDYB1xz90Jh1NTd\np+CVBw3SuaXpqfRFkyJBS3ijlsjgjNvbpPtMrbqeefCr2i8SGmAOhhIsJXhJZoEY\nNrENzaMvj+29OrtEw/U5mYL6IPP4Xhn1OWPcaZp+2jkTMAKYmJCMRsSbVGVL5E6T\nNycYfPFXB9kkhDZCireH7D7Oh92X2ORXsLWX8W1l9Cid0jSRmPwZPr5rjYGyBM8/\nOh9ScWoq+5vDOVu60W0VHufxyb0uVweUbSqffwYHkdAWdW+00Qk/mivIVECu9APZ\nF0bzubW/6XfY9zVFlu6260zviOZy1sDd33/BLE1P0eEWHyrHfmGlY29JEHI6ZWnX\ne2/GWArbAgMBAAECggEAD+D2ouV/9nNE6ZKp4iULFzv4cy+VWg8sZj1BvaXbLQ+I\nJ4xoa6Scwiz3YO0K0bCo8oMDT0W6d4wLyCJZAEk8X0Yb35wItiTAin57T0m1ymyW\n9DHxjPrMKtp9IH5tFRdTD08yVgfYNuxYpDSFG0/aaMnAZGaSxcWuzimyHM8wHWA8\nE2mC6tA78SJerJVhy4K8SNS3C4tsPOyzjWDzFMH9Pn/V2APs+YoXukX5caRoVvqH\nklZw9gDX6o13a8uTeXAk/4RzCmZ3RYfsll/tSwnAJ+06ojpYnINqy6so2dYP2mBk\nnnrEbN1mUT3TGwL3SK7T1tXRdl+qZe8cQVdwPbHnHQKBgQD7ko5/bC4DLuuFCWfp\nbmLhtk1WYCtijESW/m9H0hQ09948pBaGKlLe//1JrxHxaUtVx7Vl4SGbzLNYNvni\nvZ7Se6uC6wKtczppWysT7cgiROED83f/J7rUfjlEaiKSPWuyMkpqscLeOfZTm2Jm\nhdancw4+WyAnhr8MeYJEVGTH7wKBgQDb1KogMBPefZdo4q7zxFBE8R519otB265k\nMsVzLHJ3C3czbZZ5elR8nUhSUAwOOz5GgGmLIWGXSshlwUMQD3nvJW0nvkPR0YsP\nuAr8ppEenjPHbBnd6kYbWcMFN7M1VfAKKy91rS+RpcefigVoGR5gmyrPr01wAMcr\nrkDvcHRf1QKBgQD4askRpHZvKEbjcN1OUXWNIuKNd5t/zbjxTT//sL/JajXmtbWU\nOHjqweeQejMCqxH8G5/RgZUZbvJuGqN4tfv+Jqa/OWfEdTNp09/e5v+ob1GvAB0v\nNUE1EYtlNlT7CXGuXiDD6NLfdGb8OkTZrjG/2kpnYr6GqXVAUUBETv3RuwKBgQDR\nMpVfokEWR1BySN6TLivxH8CMI74sQ0G3KrXKP+8CKNAcCdrb6bVDDW5IntKKLIi8\nEPHfrDmx/0Gry/nk68Vu9p/k5WSm5JFAuTUDcAPELms6CT6od4yV9JrpeTM6u3h+\nRNCaXOBa63eH9JHmmZjV+HQKRlocDzF6+Q3kjpDArQKBgQDFHof5xWcYB3l36o93\nYz2Z6sNXaeOjhC5970Bv052Nl4Gu3KckgC65FcESfOtaCfdWfa9FgIkQSP7tVHVn\n07HRB6CSPrUKHX6BN5or5eqsUJT2VSlYH7ezodmCYoqT3hlnsT5dltww8s0VM4uz\nueLgal7CUCkE9QCgnqHsm9YaOQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "trash-segregation-service@trash-segregation.iam.gserviceaccount.com",
+  "client_id": "106254285373008071561",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/trash-segregation-service%40trash-segregation.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

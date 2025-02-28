@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Waste Segregation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        #result-container {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: none;
+        }
+        #image-preview {
+            max-width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Waste Segregation Detector</h1>
+        <p>Upload an image to classify the waste type</p>
+        
+        <form id="prediction-form" enctype="multipart/form-data" method="POST" action="/predict-local">
+            <input type="file" id="image-input" name="image" accept="image/*">
+            <button type="submit">Analyze Image</button>
+        </form>
+        
+        <div id="preview-container">
+            <img id="image-preview" src="" alt="Preview">
+        </div>
+        
+        <div id="result-container">
+            <h2>Results:</h2>
+            <pre id="result-json"></pre>
+        </div>
+    </div>
+
+    <script>
+        // Preview image before upload
+        document.getElementById('image-input').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+            
+            reader.onload = function(e) {
+                const preview = document.getElementById('image-preview');
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+            }
+            
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        });
+        
+        // Handle form submission
+        document.getElementById('prediction-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const resultContainer = document.getElementById('result-container');
+            const resultJson = document.getElementById('result-json');
+            
+            resultContainer.style.display = 'block';
+            resultJson.textContent = 'Processing...';
+            
+            try {
+                const response = await fetch('/predict', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                resultJson.textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                resultJson.textContent = 'Error: ' + error.message;
+            }
+        });
+    </script>
+</body>
+</html>
